@@ -13,4 +13,4 @@ declare interface BaseModule {
 }
 
 declare interface Commands { [key: string]: Command; }
-declare type ClientEvents = Array<ClientEvent>
+declare type ClientEvents = ClientEvent[]

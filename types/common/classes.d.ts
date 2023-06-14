@@ -12,7 +12,11 @@ declare class ClientEvent extends BaseModule {
 }
 
 declare class Command extends BaseModule {
-	constructor(file: string) {
+	name: any;
+	description: any;
+	constructor(file: string, name: string, description: string) {
 		super(file);
+		this.name = name;
+		this.description = description;
 	}
 }

@@ -1,7 +1,7 @@
 import Logger from '@ptkdev/logger';
 import { Client } from 'discord.js-selfbot-v13';
 
-export const metadata = {
+export const metadata = <EventMetadata>{
 	event: 'ready',
 	type: 'once',
 };

@@ -4,5 +4,6 @@ export const events = <ClientEvents>[
 ];
 
 export const commands = <Commands>{
-	ping: { file: 'commands/ping.ts' },
+	ping: { file: 'commands/ping.ts', name: 'ping', description: 'Replies with pong!' },
+	help: { file: 'commands/help.ts', name: 'help', description: 'Shows commands!' },
 };

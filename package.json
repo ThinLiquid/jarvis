@@ -12,6 +12,7 @@
     "lint": "eslint . --ext .ts"
   },
   "devDependencies": {
+    "@types/dedent": "^0.7.0",
     "@types/node": "^20.3.0",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
@@ -23,7 +24,9 @@
   },
   "dependencies": {
     "@ptkdev/logger": "^1.8.0",
+    "ascii-table3": "^0.8.2",
     "chalk": "^4.1.2",
+    "dedent": "^0.7.0",
     "discord.js-selfbot-v13": "^2.14.3",
     "prompt-sync": "^4.2.0"
   }

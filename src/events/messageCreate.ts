@@ -3,7 +3,7 @@ import { Client, Message } from 'discord.js-selfbot-v13';
 
 import { handleMessage } from '../handlers';
 
-export const metadata = {
+export const metadata = <EventMetadata>{
 	event: 'messageCreate',
 	type: 'on',
 };
