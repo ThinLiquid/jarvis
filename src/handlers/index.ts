@@ -9,8 +9,10 @@ export const handleMessage = async (logger: Logger, client: Client, message: Mes
 
 	const splitCommand = message.content.replace(process.env.PREFIX, '').split(' ');
 	const command = splitCommand[0];
-	const args = splitCommand.shift();
+	splitCommand.shift();
+
+	if (!commands[command]) return;
 
 	const cmd = await import('../' + commands[command].file);
-	cmd.run(logger, client, message, args);
+	cmd.run(logger, client, message, splitCommand);
 };

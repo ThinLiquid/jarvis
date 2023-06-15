@@ -3,7 +3,6 @@ import { Client, Message } from 'discord.js-selfbot-v13';
 import { commands } from '../metadata';
 
 import { codeblock } from '../formatters';
-import dedent from 'dedent';
 
 import { AlignmentEnum, AsciiTable3 } from 'ascii-table3';
 
