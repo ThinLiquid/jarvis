@@ -1,14 +1,13 @@
 {
-  "name": "jarvis",
+  "name": "@jarvis/bot",
   "version": "1.0.0",
   "repository": "https://github.com/ThinLiquid/jarvis",
   "license": "MIT",
   "author": "ThinLiquid <thinliquid@proton.me>",
-  "main": "src/index.ts",
-  "typings": "./typings/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc src/index.ts",
-    "start": "ts-node src/index.ts",
+    "build": "tsc",
     "lint": "eslint . --ext .ts"
   },
   "devDependencies": {
@@ -16,7 +15,6 @@
     "@types/node": "^20.3.0",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
-    "common": "./types/common",
     "dotenv": "^16.1.4",
     "eslint": "^8.42.0",
     "ts-node": "^10.9.1",
@@ -29,5 +27,8 @@
     "dedent": "^0.7.0",
     "discord.js-selfbot-v13": "^2.14.3",
     "node-fetch": "^2.6.11"
-  }
+  },
+  "files": [
+	"src/**/*"
+  ]
 }

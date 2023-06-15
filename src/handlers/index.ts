@@ -15,4 +15,5 @@ export const handleMessage = async (logger: Logger, client: Client, message: Mes
 
 	const cmd = await import('../' + commands[command].file);
 	cmd.run(logger, client, message, splitCommand);
+	logger.debug(message.content);
 };

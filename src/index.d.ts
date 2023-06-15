@@ -1,5 +1,5 @@
-import './classes';
-import './interfaces';
+import './typings/classes';
+import './typings/interfaces';
 
 declare type ClientEvent = BaseModule;
 declare type Command = BaseModule;
